@@ -45,10 +45,17 @@ const iSeeThroughYou = () => {
 seeThrough.addEventListener('click', iSeeThroughYou)
 
 
+let colorIsWhite = true;
 const getButton = document.querySelector('#toggle');
 const switchIt = document.querySelector('#row');
 const switchBGcolor = () => {
-    switchIt.style.backgroundColor = "lightblue"
+    if(colorIsWhite){
+        switchIt.style.backgroundColor = "lightblue"
+        colorIsWhite = false;
+    }else {
+        switchIt.style.backgroundColor = 'white'
+        colorIsWhite = true;
+    }
 }
 getButton.addEventListener('click', switchBGcolor)
 

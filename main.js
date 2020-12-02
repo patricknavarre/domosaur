@@ -59,6 +59,14 @@ const makeBig = () => {
 }
 notoriousBig.addEventListener('mouseenter', makeBig)
 
+const smallAgain = document.querySelector('#biggify');
+const makeSmall = () => {
+    smallAgain.style.width = ''
+}
+smallAgain.addEventListener('mouseleave', makeSmall)
+
+
+
 
 
 
